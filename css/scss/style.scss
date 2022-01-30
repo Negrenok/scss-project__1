@@ -1,0 +1,101 @@
+@import "null";
+
+// переменные
+
+$ffa_1: Arial, "Helvetica Neue", Helvetica, sans-serif;
+$ffa_2: "Times New Roman", Times, serif;
+
+// основная часть кода
+body {
+    background-color: #e8e8e8;
+    .content {
+        max-width: 1190px;
+        padding: 160px 0px 137px 0px;
+        margin: 0px auto;
+        .top-content {
+            padding-bottom: 77px;
+            .top-content__title {
+                font-family: $ffa_1;
+                font-size: 14px;
+                line-height: 40px;
+                text-transform: uppercase;
+                letter-spacing: 0.2em;
+                text-align: center;
+                color: #939da1;
+            }
+            .top-content__text {
+                font-family: $ffa_2;
+                font-size: 36px;
+                line-height: 50px;
+                color: #273d46;
+                text-align: center;
+            }
+        }
+        .image-content {
+            padding-bottom: 97px;
+            text-align: center;
+            & img {
+                background-color: #ffffff;
+                padding: 10px;
+                width: 821px;
+                height: 541px;
+            }
+        }
+        .bottom-content {
+            padding: 0px 220px 0px 220px;
+            .bottom-content__text {
+                font-family: $ffa_2;
+                font-size: 24px;
+                line-height: 40px;
+                color: #273d46;
+                & p {
+                    padding-bottom: 40px;
+                }
+            }
+            .bottom-content__ul-list {
+                padding-bottom: 60px;
+                font-family: $ffa_1;
+                & li {
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                    &::before {
+                        content: url("../../img/icons/check.png");
+                        margin: 0px 8px 0px 0px;
+                    }
+                }
+                & li:first-child {
+                    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+                    color: #273d46;
+                }
+                & li:nth-child(2) {
+                    font-style: italic;
+                    color: #80b7b3;
+                }
+                & li:nth-child(3) {
+                    font-weight: 700;
+                    color: #273d46;
+                }
+                & li:last-child {
+                    text-decoration: line-through;
+                    color: #afb6b9;
+                }
+            }
+        }
+        .bottom-content__button {
+            border-radius: 15px;
+            text-transform: uppercase;
+            background-color: #80b7b3;
+            width: 200px;
+            padding: 0 30px;
+            line-height: 40px;
+            display: inline-block;
+            font-family: $ffa_1;
+            font-size: 14px;
+            letter-spacing: 0.2em;
+            & span {
+                color: #ffffff;
+                background: url("../../img/icons/arrow.svg");
+            }
+        }
+    }
+}
